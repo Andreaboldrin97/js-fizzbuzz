@@ -6,6 +6,7 @@ let nMultiple5;
 
 
 // stampiamo in console i numeri progressivi da 1 a 100 
+//!ricorda i èun valore numerico mai cambiarlo facendolo diventare una striga perchè se verificato si fermerà (i=`stringa`)
 
 for( let i = 1 ; i <= 100 ; i = i + 1){
     //? assegniamo una var per i N° multipli di 3 e 5 all'interno della var (i)
@@ -32,14 +33,11 @@ for( let i = 1 ; i <= 100 ; i = i + 1){
 
             //! se solo nM5 è vere allora;
 
-        }else if( nMultiple5 == true){
+        }else ( nMultiple5 == true){
             //!stampa in console `buzz`
             console.log`buzz`;
 
             //! se nM3 and nM5 sono false allora;
-        }else{
-            //! la variabile i rimane i
-            i=i
         }
     }
    
