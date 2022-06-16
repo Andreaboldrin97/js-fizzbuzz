@@ -9,10 +9,13 @@ let nMultiple5;
 
 for( let i = 1 ; i <= 100 ; i = i + 1){
     //? assegniamo una var per i N° multipli di 3 e 5 all'interno della var (i)
-    let nMultiple3 = i % 3 == 0
-    let nMultiple5 = i % 5 == 0
+    let nMultiple3 = i % 3 == 0;
+    let nMultiple5 = i % 5 == 0;
 
-    console.log(nMultiple3)
-    console.log(nMultiple5)
-    console.log(i)
+    console.log(nMultiple3);
+    console.log(nMultiple5);
+    console.log(i);
+    if( nMultiple3 == true){
+        i == `fizz`;
+    }
 }
