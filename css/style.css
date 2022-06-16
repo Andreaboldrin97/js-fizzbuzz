@@ -1,15 +1,22 @@
+body{
+    background-color: rgb(32, 32, 117);
+}
 .box_dom{
     color: black;
-    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
 }
 .box_bgN{
-    background-color: rgb(50, 50, 153);
+    background-color: rgb(58, 58, 236);
 }
 .box_bgFizz{
     background-color: rgb(25, 146, 61);
 }
 .box_bgBuzz{
-    background-color: rgb(211, 195, 51);
+    background-color: rgb(255, 233, 32);
 }
 .box_bgFizzbuzz{
     background-color: rgb(198, 38, 38);

@@ -11,7 +11,19 @@ let boxContainer = document.querySelector(`.box_container`);
 //!ricorda i èun valore numerico mai cambiarlo facendolo diventare una striga perchè se verificato si fermerà (i=`stringa`)
 
 for( let i = 1 ; i <= 100 ; i = i + 1){
-      
+    //*creo una variaile con l'elemento che voglio creare
+
+    let boxElement =document.createElement('div');
+    //*aggiungiamo a questo div la classi: box_dom
+
+      boxElement.classList.add('box_dom','col-2', 'box_bgN');
+    //* la var boxElement la dichiaro = a 1 e la porto all'interno dell' html
+
+    boxElement.innerHTML= i
+    //* dico al parent(boxContainer) di aggiunger i (boxElement) creati
+
+    boxContainer.append(boxElement)
+
     //? assegniamo una var per i N° multipli di 3 e 5 all'interno della var (i)
 
     let nMultiple3 = i % 3 == 0;
@@ -24,34 +36,33 @@ for( let i = 1 ; i <= 100 ; i = i + 1){
 
     //! se nM3 and nM5 sono vere allora;
     if((nMultiple3 == true) && ( nMultiple5 == true )){
+        //* se un elemento è multiplo di 3 e di 5 allora quel boxElement sarà `FizzBuzz`
+        boxElement.innerHTML=(`FizzBuzz`);
+        boxElement.classList.add('box_bgFizzbuzz');
+
         //!stampa in console `fizzbuzz`
         console.log(`fizzbuzz`); 
-    } //! se solo nM3 è vera allora;
-
+    } 
+    //! se solo nM3 è vera allora;
     else if( nMultiple3 == true){
+        //* se un elemento è multiplo di 3 allora quel boxElement sarà `Fizz`
+        boxElement.innerHTML=(`Fizz`);
+        boxElement.classList.add('box_bgFizz');
+
         //!stampa in console `fizz`
         console.log(`fizz`);
-    } //! se solo nM5 è vere allora;
+
+    } 
+    //! se solo nM5 è vere allora;
     else if( nMultiple5 == true){
+          //* se un elemento è multiplo di 5 allora quel boxElement sarà `Fizz`
+          boxElement.innerHTML=(`Buzz`);
+          boxElement.classList.add('box_bgBuzz');
 
             //!stampa in console `buzz`
             console.log(`buzz`);
-
-            //! se nM3 and nM5 sono false allora;
         }
     console.log(i);
-    //*creo una variaile con l'elemento che voglio creare
-
-    let boxElement =document.createElement('div');
-    //*aggiungiamo a questo div la classi: box_dom
-
-      boxElement.classList.add('box_dom','col-2');
-    //* la var boxElement la dichiaro = a 1 e la porto all'interno dell' html
-
-    boxElement.innerHTML= i
-    //* dico al parent(boxContainer) di aggiunger i (boxElement) creati
-
-    boxContainer.append(boxElement)
     }
    
     
