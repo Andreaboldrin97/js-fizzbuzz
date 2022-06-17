@@ -62,8 +62,9 @@ for( let i = 1 ; i <= 100 ; i = i + 1){
 
             //!stampa in console `buzz`
             console.log(`buzz`);
+        }else{
+            console.log(i);
         }
-    console.log(i);
     }
    
     
