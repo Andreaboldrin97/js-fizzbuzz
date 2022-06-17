@@ -35,6 +35,7 @@ for( let i = 1 ; i <= 100 ; i = i + 1){
     //!creiamo un if con le possibilità :
 
     //! se nM3 and nM5 sono vere allora;
+    //!(mettiamo prima la doppia affermazione perchè essendo a js cascata si dobbiamo verificare prima i multipli de entrambi per dargli importanza in modo da far uscire prima il risultato multiplo)
     if((nMultiple3 == true) && ( nMultiple5 == true )){
         //* se un elemento è multiplo di 3 e di 5 allora quel boxElement sarà `FizzBuzz`
         boxElement.innerHTML=(`FizzBuzz`);
