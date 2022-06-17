@@ -20,9 +20,7 @@ for( let i = 1 ; i <= 100 ; i = i + 1){
     //* la var boxElement la dichiaro = a 1 e la porto all'interno dell' html
 
     boxElement.innerHTML= i
-    //* dico al parent(boxContainer) di aggiunger i (boxElement) creati
-
-    boxContainer.append(boxElement)
+    
 
     //? assegniamo una var per i N° multipli di 3 e 5 all'interno della var (i)
 
@@ -65,6 +63,9 @@ for( let i = 1 ; i <= 100 ; i = i + 1){
         }else{
             console.log(i);
         }
+        //* dico al parent(boxContainer) di aggiunger i (boxElement) creati
+        //*lo inserisco in fondo perchè nell'if cambiono alcune classi quindi aspetto che le cretteristiche(classi) di i siano complete e poi lo aggiungo nel html
+        boxContainer.append(boxElement)
     }
    
     
